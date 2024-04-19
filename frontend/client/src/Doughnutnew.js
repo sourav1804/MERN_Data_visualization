@@ -23,7 +23,7 @@ function DoughnutGraphData() {
     useEffect(() => {
         const fetchOrders = async () => {
             try {
-                const response = await Axios.get('http://localhost:3300/getorders');
+                const response = await Axios.get('https://mern-data-visualization.vercel.app/getorders');
                 setOrders(response.data);
                 setLoading(false);
             } catch (error) {
