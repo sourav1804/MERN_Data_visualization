@@ -7,7 +7,7 @@ const { MongoClient } = require('mongodb');
 const app = express();
 app.use(cors())
 app.use(express.json())
-const uri = (process.env.Mongo_url);
+const uri ="mongodb+srv://sourav:sourav123@cluster0.qrihw0a.mongodb.net/mydatabase" ;
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 
 app.get("/", (req, res) => {
